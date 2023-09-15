@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
+
+
+body{
+    background-color: rgb(127, 194, 157);
+    background-image: url(../images/background.png);
+    background-blend-mode:multiply;
+    background-size: cover;
+    background-position: center center;
+    background-repeat:repeat-x;
+    height: 100%;
+    width: 100%;
+}
+header{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 21.75vw;
+    background-image: url(../images/clouds.gif);
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 5rem;
+}
+
+.me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8rem 12rem;
+    grid-row-gap: 5rem;
+    justify-items: center;
+}
+.me img{
+    width: auto;
+    height: 30vh;
+    justify-content: right;
+    
+}
+.tomb{
+    background-image: url(../images/tomb.png);
+    background-size: 180% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 30vh;
+    width: auto;
+    padding: 2rem;
+    margin-right: 50%;
+    margin-top: -3rem;
+}
+.info{
+    font-size: 65%;
+    margin-left: 1.5rem;
+    text-align: center;
+}
+.textbubble{
+    margin: auto;
+    background-image: url(../images/text.png);
+    background-size: 135% 115%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 18rem;
+    width: 100%;
+    grid-column: 1 / span 2;
+}
+.bio{
+    float: inline-start;
+    margin-top: 7rem;
+    font-size: 8pt;
+    line-height: 8pt;
+}
+.bio p{
+    margin: 1rem 3rem 0.5rem 3rem;
+}
+.bio h3{
+    margin: 0rem 3rem -1rem 3rem;
+}
+
+.work{
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 4vh;
+    margin-top: 12vh;
+}
+.work div{
+    width: 70%;
+    font-size: 2.5vw;
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(148, 148, 148);
+    border-radius: 15px;
+    border-top: 5px solid lightgrey;
+    border-bottom: 5px solid grey;
+    border-left: 5px solid lightgrey;
+    border-right: 5px solid grey;
+}
+.work li{
+    list-style: none;
+    text-align: left;
+    
+}
+h1{
+    padding-top: 3.75rem;
+    color: rgb(84, 138, 104);
+    font: 20pt "Silkscreen";
+    font-weight: 700;
+    filter: drop-shadow(0px 2px 1px rgb(58, 58, 58));
+    mix-blend-mode:color-dodge;
+    
+}
+h2{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    color: white;
+}
+h3{
+    font: 10pt "Silkscreen";
+    font-weight: 700;
+}
+.bio p{
+    font-family: 'Source Code Pro', monospace;
+    color: black;
+}
+ol, p{
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+
+a:link {
+    color: rgb(142, 7, 112);
+}
+
+a:visited {
+    color: rgb(142, 7, 112);
+}
+a:hover {
+    color: rgb(0, 79, 0);
+}
+
+footer{
+    margin: 3vh auto;
+    width: 70%;
+    padding: 0rem 1rem;
+    background-color: rgb(148, 148, 148, 0.5);
+    border-radius: 15px;
+    border-top: 5px solid lightgrey;
+    border-bottom: 5px solid grey;
+    border-left: 5px solid lightgrey;
+    border-right: 5px solid grey;
+}
+
+@media screen and (min-width: 1000px) {
+    header{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 12vw;
+    }
+    body{
+        height: 100%;
+        min-height: 20vmin;
+
+    }
+    .me{
+    margin-top: -2rem;
+    }
+    .me img{
+        width: auto;
+        height: 30vh;
+        margin-left: 50%;
+        margin-top: -3rem;
+    }
+    .tomb{
+        background-image: url(../images/tomb.png);
+        background-size: 180% 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        height: 30vh;
+        width: 16rem;
+        padding: 2rem;
+        margin-right: 70%;
+        margin-top: -6rem;
+    }
+    
+    .info{
+        font-size: 70%;
+        width: 65%;
+        margin-left: 4.25rem;
+    }
+
+    .textbubble{
+        width: 70%;
+        margin: -3rem auto;
+    }
+    .bio{
+        margin: 7.5rem 1rem 0rem 1rem;
+        font-size: 10pt;
+        line-height: 8pt;
+    }
+
+    .work{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 5rem auto;
+    }
+    .work div{
+        width: 70%;
+        height: 80%;
+        font-size: 1.25vw;
+        margin: auto;
+        justify-content: center;
+
+    }
+
+}
+@media screen and (max-width:1000px) and (min-width: 570px){
+    body{
+        background-image: url(../images/background2.png);
+    }
+    .me{
+    margin-top: -2rem;
+    }
+    .me img{
+        width:auto;
+    }
+
+    .tomb{
+        background-image: url(../images/tomb.png);
+        background-size: 180% 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        height: 30vh;
+        width: 15rem;
+        padding: 2rem;
+        margin-right: 50%;
+        margin-top: -3rem;
+    }
+    .info{
+        font-size: 70%;
+        width: 65%;
+        margin-left: 3.75rem;
+    }
+
+    .textbubble{
+        width: 80%;
+        margin: auto;
+    }
+    .bio{
+        margin: 7.5rem 1rem 0rem 1rem;
+        font-size: 8pt;
+        line-height: 8pt;
+    }
+
+    .work{
+        margin: auto;
+    }
+    .work div{
+        width: 75%;
+        font-size: 90%;
+        margin: -1rem auto 5rem auto;
+    }
+}
