@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+   background-color: red;
+   text-align: center;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    padding: 2rem;
+    text-align: center;
+}
+section p,img{
+    padding-bottom: 2rem;
+}
+img{
+    margin: 2rem;
+}
